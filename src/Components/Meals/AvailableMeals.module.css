@@ -4,6 +4,21 @@
     margin: 2rem auto;
     animation: meals-appear 1s ease-out forwards;
 }
+.MealsLoading{
+    text-align: center;
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+}
+.MealsError{
+    text-align: center;
+    max-width: 60rem;
+    color: red;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+}
 
 .meals ul {
     list-style: none;
