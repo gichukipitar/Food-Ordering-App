@@ -53,14 +53,17 @@ const Checkout = (props) => {
             <div className={classes.control}>
                 <label htmlFor='street'>Street</label>
                 <input type='text' id='street' ref={streetInputRef} />
+                {!formInputsValidity.street && <p>Please enter a valid street!</p>}
             </div>
             <div className={classes.control}>
                 <label htmlFor='postal'>Postal Code</label>
                 <input type='text' id='postal' ref={postalInputRef}/>
+                {!formInputsValidity.postal && <p>Please enter a valid postal code (5 characters long)!</p>}
             </div>
             <div className={classes.control}>
                 <label htmlFor='city'>City</label>
                 <input type='text' id='city' ref={cityInputRef} />
+                {!formInputsValidity.city && <p>Please enter a valid city!</p>}
             </div>
             <div className={classes.actions}>
                 <button type='button' onClick={props.onCancel}>
