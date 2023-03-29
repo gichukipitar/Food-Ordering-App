@@ -14,7 +14,7 @@ const AvailableMeals = () => {
             const response = await fetch('https://order-app-e37fb-default-rtdb.firebaseio.com/meals.json');
 
             if (!response.ok) {
-            throw new Error('Something went wrong!');
+                throw new Error('Something went wrong!');
             }
 
 
@@ -33,12 +33,12 @@ const AvailableMeals = () => {
             setIsLoading(false);
         };
 
-              fetchMeals().catch(error => {
+        fetchMeals().catch(error => {
             setIsLoading(false);
             setHttpError(error.message);
-              })
+        })
 
-       }, []);
+    }, []);
     if (isLoading) {
         return (
             <section className={classes.MealsLoading}>
